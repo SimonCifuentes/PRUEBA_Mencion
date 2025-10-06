@@ -13,6 +13,7 @@ Copy-Item .env.example .env
 python -m uvicorn app.main:app --reload
 ```
 ## Mutation crearProducto
+```powershell
 mutation {
   crearProducto(
     nombre: "Mouse Inalámbrico"
@@ -33,8 +34,10 @@ mutation {
     categoria
   }
 }
+```
 
 ## Query productos
+```powershell
 query {
   productos {
     id
@@ -44,4 +47,4 @@ query {
     categoria
   }
 }
-
+```
